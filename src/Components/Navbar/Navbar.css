@@ -1,0 +1,146 @@
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; /* Reduced logo size */
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: transparent;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+    color: gray;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem; /* Reduced padding */
+}
+
+.login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.login a:hover {
+    border-bottom: 1px solid gold;
+}
+
+.login div {
+    width: 1px;
+    height: 30px;
+    background-color: gray;
+}
+
+.smallScreenMenu {
+    display: none;
+}
+
+.smallScreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    transition: 0.5s ease;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.smallScreen-overlay .overlay-close {
+    font-size: 27px;
+    color: goldenrod;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.smallScreen-nav-links {
+    list-style: none;
+}
+
+.smallScreen-nav-links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: goldenrod;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.smallScreen-nav-links li:hover {
+    color: white;
+}
+
+@media screen and (max-width: 1250px) {
+    .nav-links {
+        display: none;
+    }
+
+    .smallScreenMenu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav-container {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        width: 90px; /* Reduced logo size for smaller screens */
+    }
+
+    .login {
+        display: none;
+    }
+
+    .smallScreenMenu {
+        padding-right: 2rem; /* Reduced padding */
+    }
+}
+@media screen and (max-width: 430px) {
+    .nav-container{
+        width: 500px;
+    }
+}

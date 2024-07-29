@@ -1,0 +1,132 @@
+/* BookingForm.css */
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: rgb(87, 0, 17);
+    padding: 0.5rem; /* Padding adjusted for a compact look */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width for smaller screens */
+    position: relative;
+    border: 1px solid #d3a542; /* Elegant border color */
+    overflow: hidden; /* Prevent overflow */
+    box-sizing: border-box;
+    max-height: 90vh; /* Limit height to fit within viewport */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  }
+  
+  .modal-content h1 {
+    margin-top: 0;
+    font-family: 'Georgia', serif;
+    font-size: 1.4em; /* Reduced font size */
+    color: #d3a542;
+    text-align: center;
+    border-bottom: 2px solid #d3a542; /* Elegant border for the header */
+    padding-bottom: 0.5em;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px; /* Adjusted positioning */
+    right: 10px; /* Adjusted positioning */
+    font-size: 22px; /* Slightly reduced font size */
+    font-weight: bold;
+    color: #d3a542; /* Luxurious close button color */
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #b89a34; /* Darker shade on hover */
+  }
+  
+  .modal-logo {
+    display: block;
+    margin: 0 auto 1em auto; /* Center logo and space below */
+    width: 120px; /* Increased size */
+    max-width: 100%; /* Ensure it doesn't overflow */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 0.8em; /* Reduced margin */
+    font-family: 'Georgia', serif;
+    font-size: 0.9em; /* Adjusted font size */
+    color: #d3a542;
+  }
+  
+  form input {
+    padding: 0.7em; /* Adjusted padding */
+    margin-top: 0.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em; /* Adjusted font size */
+  }
+  
+  form button {
+    padding: 0.7em; /* Adjusted padding */
+    margin-top: 1em;
+    background: #d3a542; /* Elegant button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em; /* Adjusted font size */
+  }
+  
+  form button:hover {
+    background: #b89a34; /* Darker shade on hover */
+  }
+  .success-message {
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .success-message h1 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    color: #d3a542;
+  }
+
+  .success-video {
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Adjust max width as needed */
+    border-radius: 8px; /* Rounded corners for elegance */
+  }
+  
+  .success-message p {
+    font-family: 'Georgia', serif;
+    color: #fff;
+  }
+  
+  .success-message button {
+    padding: 0.7em;
+    margin-top: 1em;
+    background: #d3a542; /* Elegant button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .success-message button:hover {
+    background: #b89a34; /* Darker shade on hover */
+  }
