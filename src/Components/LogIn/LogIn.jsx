@@ -17,9 +17,9 @@ const LogIn = ({ setShowLogin, setShowSignup }) => {
           <div className="login-social">
             <p>or sign in with</p>
             <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-google"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
+              <a href="javascript:void(0)"><i className="fab fa-facebook-f"></i></a>
+              <a href="javascript:void(0)"><i className="fab fa-google"></i></a>
+              <a href="javascript:void(0)"><i className="fab fa-twitter"></i></a>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ const LogIn = ({ setShowLogin, setShowSignup }) => {
           <img src={logo} alt="The Royal Saffron Logo" className="logo" />
           <h2>Welcome back!</h2>
           <p>We are so happy to have you here. It’s great to see you again. We hope you had a safe and enjoyable time away.</p>
-          <p>No account yet? <a href="#" onClick={() => { setShowLogin(false); setShowSignup(true); }}>Signup</a>.</p>
+          <p>No account yet? <a href="javascript:void(0)" onClick={() => { setShowLogin(false); setShowSignup(true); }}>Signup</a>.</p>
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ const appetizers = [
     tags: "quinoa, salad, healthy, vegetarian",
   },
 ];
+
 const mainCourse = [
   {
     title: "Vegetable Biryani",
@@ -32,6 +33,7 @@ const mainCourse = [
     tags: "bell peppers, stuffing, main course, vegetarian",
   },
 ];
+
 const desserts = [
   {
     title: "Mango Cheesecake",
@@ -49,6 +51,7 @@ const desserts = [
     tags: "chocolate, fondant, dessert, vegetarian",
   },
 ];
+
 const beverages = [
   {
     title: "Masala Chai",
@@ -67,4 +70,6 @@ const beverages = [
   },
 ];
 
-export default {appetizers, mainCourse, desserts, beverages};
+const menu = { appetizers, mainCourse, desserts, beverages };
+
+export default menu;
